@@ -1,0 +1,25 @@
+pipeline{
+    agent any
+    stages{
+        stage(BUILD)
+        {
+            
+            steps{
+                git branch: 'main', url: 'https://github.com/swa13pna/PIPELINE-S.git'
+            }
+        }
+        stage(TEST)
+        {
+            steps{
+                git branch: 'main', url: 'https://github.com/swa13pna/PIPELINE-S.git'
+                
+            }
+        }
+        stage(DEPLOY)
+        {
+            steps{
+                git branch: 'main', url: 'https://github.com/swa13pna/PIPELINE-S.git'
+            }
+        }
+    }
+}    
